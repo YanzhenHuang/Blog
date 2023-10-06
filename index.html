@@ -9,6 +9,11 @@
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
     <script src="./global.js"></script>
+    <script>
+      window.onload=function(){
+        document.getElementById("").innerHTML = "Test";
+      }
+    </script>
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css" />
@@ -57,15 +62,15 @@
     <main>
         <!-- Demo -->
         <section id="demo">
-
+          <!-- Big Logo-->
           <div class="Container">
             <img id="big-logo"/>
             <script>
                 document.getElementById("big-logo").src = path.logo;
             </script>
           </div>  
+          <!-- HLWAN script -->
           <h2 style="margin-top: -5px">H.L.W.A.N</h2>
-
           <!-- Image Array -->
           <div class="image-queue">
             <div class="image-wrapper">
@@ -123,22 +128,11 @@
           <h2>ARK Icon Designs</h2>
   
           <p 
-            id="output"
+            id="demo-para"
             style="text-indent: 4ch; opacity: 0.5"
+            src="Assets/Texts/ark_icon_design.txt"
           ></p>
-          <script>
-            const fs = require('fs');
-            // 读取本地TXT文档
-            fs.readFile('./Assets/Texts/ark_icon_design.txt', 'utf8', (err, data) => {
-            if (err) {
-                console.error(err);
-                return;
-            }
-            // 将内容显示在段落中
-            const output = document.getElementById('output');
-            output.textContent = data;
-            });
-          </script>
+
 
           <h3 style="text-align: center">
             <a
