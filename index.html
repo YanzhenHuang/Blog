@@ -1,5 +1,6 @@
 <doctype! HTML>
 <html>
+
   <!-- Head -->
   <head>
     <title>Huang Yanzhen</title>
@@ -24,32 +25,22 @@
     <header>
         <!-- Logo and Title -->
         <div class="container">
+
           <img id="logo"/>
           <!-- logo path -->
           <script>
             document.getElementById("logo").src = path.logo;
           </script>
 
-          <style>
-            #logo {
-              width: 80px;
-              height: 80px;
-            }
-            .container {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              align-items: center;
-            }
-          </style>
-
+          <!-- Title -->
           <h2 id="tot-title" style="text-indent: 1ch">Huang Yanzhen</h2>
+
         </div>
 
         <!-- Navigation Buttons-->
         <nav>
           <ul id="navigation-buttons">
-            <li><a herf="#demo">Designs</a></li>
+            <li><a herf="#ark">Designs</a></li>
             <li><a href="#intro">Introduction</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -61,7 +52,7 @@
     <!-- Main Webpage Body-->
     <main>
         <!-- Demo -->
-        <section id="demo">
+        <section id="ark">
           <!-- Big Logo-->
           <div class="Container">
             <img id="big-logo"/>
@@ -81,41 +72,7 @@
             </div>
             <link rel="demo_img" href="style.css" />
           </div>
-          <!-- Image Scroll Animation -->
-          <script>
-            window.onload = function() {
-              var imageQueue = document.querySelector('.image-queue');
-              var imageWrapper = document.querySelector('.image-wrapper');
-              var images = imageWrapper.querySelectorAll('img');
-              var imgCount = imageWrapper.childElementCount;
-              var firstImage = images[0];
-        
-              imageQueue.addEventListener('mouseover', function() {
-                imageWrapper.style.animationPlayState = 'paused';
-              });
-        
-              imageQueue.addEventListener('mouseout', function() {
-                imageWrapper.style.animationPlayState = 'running';
-              });
-        
-              imageWrapper.addEventListener('animationiteration', function() {
-                
-              });
-            
-              
-              setInterval(function(){
-                // 当滚动动画完成一次循环后
-                // 将第一张图片插入到队列末尾
-                imageWrapper.appendChild(firstImage.cloneNode(true));
-                // 移除原来的第一张图片
-                imageWrapper.removeChild(firstImage);
-                // 重新获取第一张图片
-                firstImage = imageWrapper.querySelector('img');
-              },3000);
-              
-
-            };
-          </script>
+          
           <style>
             img {
               width: 300px;
