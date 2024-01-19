@@ -1,5 +1,7 @@
   body {
-    font-family: Arial, sans-serif;
+    font-family: "Helvetica", Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
     width:100%;
     margin: 0;
     padding: 0;
@@ -8,25 +10,34 @@
   }
 
   header {
-    padding: 20px;
-    height: 50px;
-    width: 95%;
+    padding-right:20px;
+    height: 80px;
+    width: 100%;
     position:fixed;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     align-items: center;
 
     /* 291468 - 0e0f21*/
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
+    /* Blur Effect*/
+    -webkit-backdrop-filter: blur(50px), brightness(0%);
+    backdrop-filter: blur(50px);
     color: #fff;    
     box-shadow: 0 4px 6px rgba(0, -20, 20, 0.1); /* 水平偏移、垂直偏移、模糊半径、颜色和透明度 */
+  }
+
+  section {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 50px 0;
+    border-bottom: 1px solid #292b54;
   }
 
   nav ul {
     list-style: none;
     display: flex;
-    margin-right:10;
+   
     padding: 0;
   }
 
@@ -43,6 +54,7 @@
 
   nav a:hover {
     color: #747474;
+    text-shadow: 0 1px 10px rgb(125, 125, 125);
   }
 
   h1,
@@ -51,12 +63,6 @@
     margin: 50px 0;
   }
 
-  section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px 0;
-    border-bottom: 1px solid #ddd;
-  }
 
   ul {
     list-style: disc;
@@ -75,6 +81,7 @@
     width: 80px;
     height: 80px;
   }
+
   .container {
     display: flex;
     flex-direction: row;
@@ -86,9 +93,25 @@
     list-style:none;
   }
 
+  /* ARK Logos image array*/
   .image-queue {
     width: 100%;
-    overflow: hidden;
+    overflow:scroll;
+    scroll-behavior: smooth;
+  }
+
+  /* This referes to the list item of ARK Logos.*/
+  #demo-img{
+    /* Basic Size settings*/
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    /* Forbids dragging*/
+    -webkit-user-drag: none;
+    /* Radius & Shadows*/
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #000000";
+    
   }
   
   .image-wrapper {
@@ -96,23 +119,39 @@
     gap: 20px;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     white-space: nowrap;
   }
   
+  footer {
+    padding-top: 20px;
+    opacity: 0.5;
+    height: 100px;
+    background: rgb(14, 3, 32);
+  }
+  .footer-note{
+    font-size: 14px;
+    color: white;
+  }
 
   @media all and (max-width:800px){
     /* #tot-title{
       display:none;
     } */
-    #demo-img1{
-      display:none;
+    header{
+      padding-left:20px;
+      justify-content:space-between;
     }
-    #demo-img3{
-      display:none;
+
+    #big-logo{
+      width: 300px;
+      height: 300px;
     }
+
     #navigation-buttons{
       display:none;
     }
+
     main {
 			padding: 0 20px; /* adds 20 pixels of padding to the left and right sides */
 		}
@@ -132,4 +171,10 @@
       padding-left:0;
     }
 
+  }
+
+  @media all and (min-width:800px){
+    #nav-button{
+      display:none;
+    }
   }

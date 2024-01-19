@@ -25,71 +25,73 @@
     <header>
         <!-- Logo and Title -->
         <div class="container">
-
-          <img id="logo"/>
-          <!-- logo path -->
-          <script>
+            <!-- Logo-->
+            <img id="logo"/>
+            <!-- logo path -->
+            <script>
             document.getElementById("logo").src = path.logo;
-          </script>
+            </script>
 
-          <!-- Title -->
-          <h2 id="tot-title" style="text-indent: 1ch">Huang Yanzhen</h2>
-
+            <!-- Title -->
+            <h2 id="tot-title" style="text-indent: 1ch">Huang Yanzhen</h2>
         </div>
 
         <!-- Navigation Buttons-->
         <nav>
-          <ul id="navigation-buttons">
-            <li><a herf="#ark">Designs</a></li>
-            <li><a href="#intro">Introduction</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="https://www.instagram.com/delaynomore_hyz/">Instagram</a></li>
-          </ul>
+            <ul id="navigation-buttons">
+                <li><a herf="#ark">Designs</a></li>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="https://www.instagram.com/delaynomore_hyz/">Instagram</a></li>
+            </ul>
         </nav>
+
+        <!-- Navigation Button to extend.-->
+        <img
+        class="icon"
+        style="width: 50px; height: 50px;"
+        src="Assets/Icons/more.png"
+        id="nav-button"
+        />
+
     </header>
 
     <!-- Main Webpage Body-->
     <main>
         <!-- Demo -->
         <section id="ark">
-          <!-- Big Logo-->
-          <div class="Container">
-            <img id="big-logo"/>
-            <script>
-                document.getElementById("big-logo").src = path.logo;
-            </script>
-          </div>  
-          <!-- HLWAN script -->
-          <h2 style="margin-top: -5px">H.L.W.A.N</h2>
-          <!-- Image Array -->
-          <div class="image-queue">
-            <div class="image-wrapper">
-                <img id="demo-img" src="Assets/DesignIcons/Neon Fantasy.png" style="border-radius: 30px; box-shadow: 2px 2px 10px #000000">
-                <img id="demo-img" src="Assets/DesignIcons/Sans Pixels.png" style="border-radius: 30px; box-shadow: 2px 2px 10px #000000">
-                <img id="demo-img" src="Assets/DesignIcons/Christmas.png" style="border-radius: 30px; box-shadow: 2px 2px 10px #000000">
-                <img id="demo-img" src="Assets/DesignIcons/Summer.png" style="border-radius: 30px; box-shadow: 2px 2px 10px #000000">
+            <!-- Big Logo-->
+            <div class="Container">
+                <img id="big-logo"/>
+                <script>
+                    document.getElementById("big-logo").src = path.logo;
+                </script>
+            </div>  
+
+            <!-- HLWAN script -->
+            <h2 style="margin-top: -5px">H.L.W.A.N</h2>
+
+            <!-- Image Array -->
+            <div class="image-queue">
+                <div class="image-wrapper">
+                    <img id="demo-img" src="Assets/DesignIcons/Neon Fantasy.png">
+                    <img id="demo-img" src="Assets/DesignIcons/Sans Pixels.png">
+                    <img id="demo-img" src="Assets/DesignIcons/Christmas.png">
+                    <img id="demo-img" src="Assets/DesignIcons/Summer.png">
+                </div>
+                <link rel="demo_img" href="style.css" />
             </div>
-            <link rel="demo_img" href="style.css" />
-          </div>
-          
-          <style>
-            img {
-              width: 300px;
-              height: 300px;
-              margin: 0 auto;
-            }
-          </style>
 
 
-          <h2>ARK Icon Designs</h2>
+            <h2>ARK Icon Designs</h2>
   
-          <p 
-            id="demo-para"
-            style="text-indent: 4ch; opacity: 0.5"
-            src="Assets/Texts/ark_icon_design.txt"
-          ></p>
-
+            <p 
+                id="demo-para"
+                style="text-indent: 4ch;"
+            >
+            Icon design principles.
+            </p>
 
           <h3 style="text-align: center">
             <a
@@ -102,15 +104,35 @@
 
         <!-- Intro -->
         <section id="intro">
-          <img
+            <img
             class="icon"
             style="width: 50px; height: 50px; padding-bottom: 0"
             src="Assets/Icons/intro.png"
-          />
-          <h2 style="margin-top: 5px">Introduction</h2>
-          <p style="text-indent: 4ch; opacity: 0.5">
-            INTRO_TEXT
-          </p>
+            />
+            <h2 style="margin-top: 5px">Introduction</h2>
+            <p style="text-indent: 4ch; ">
+            In terms of my career aspirations, I am deeply passionate about the field of software
+engineering and constantly seek opportunities to expand my knowledge and skills in this
+domain. I embrace new technologies with enthusiasm and approach challenges fearlessly. My
+dedication to learning is evident in my meticulous study habits, where I strive to grasp
+concepts comprehensively and dive into details without hesitation. I consistently hold myself
+to high standards, ensuring that my work is well-structured and delivered with precision. These
+qualities serve as the bedrock for my potential achievements.
+            </p>
+            <p style="text-indent: 4ch; ">
+                    Beyond my professional pursuits, I place great value on fostering meaningful connections
+                with friends, teammates, and organizations. I take pleasure in supporting and assisting my
+                friends in their times of need, and I dedicate a significant portion of my free time to
+                maintaining these relationships. Collaborative work comes naturally to me, as demonstrated by
+                my experience in developing a game as part of a cohesive team of five individuals. During my
+                first internship, I formed lasting bonds with my colleagues, and we remain in regular contact to
+                this day.
+            </p>
+            <p style="text-indent:4ch;">
+            It is my sincere desire to contribute to your esteemed company as an intern. I assure you
+            that I will dedicate myself wholeheartedly to my role and strive to provide the highest level of
+            service possible.
+            </p>
           <!-- <img src="" alt="元宇宙示意图" /> -->
         </section>
   
@@ -124,16 +146,19 @@
           <h2 style="margin-top: 5px">Skills</h2>
           <ul id="features-list-container">
             <li>
-              全球互通：元宇宙将连接全球的数字世界，使人们可以轻松地跨越国界进行数字社交和数字经济交流。
+                Object Oriented Languages: Java, C++.
             </li>
             <li>
-              虚实结合：元宇宙将虚拟世界与现实世界结合起来，为人们提供更加丰富和多样的体验。
+                Python programming for multiple purposes, e.g. Natural Language Processing.
             </li>
             <li>
-              去中心化：元宇宙将采用区块链技术，实现去中心化的管理和交易，保护用户隐私和权益。
+                Web Programming Scripts: HTML, CSS and JavaScript.
             </li>
             <li>
-              创造性：元宇宙将为用户提供创造的空间和工具，让他们可以在虚拟世界中创造自己的作品。
+                Relational database design, normalization & implementation with SQL.
+            </li>
+            <li>
+                Version Control (Git): GitHub and GitLab (with Git bash, GitHub Desktop & SourceTree).
             </li>
           </ul>
         </section>
@@ -146,28 +171,20 @@
             src="Assets/Icons/uses.png"
           />
           <h2 style="margin-top: 5px">Experience</h2>
-          <p>元宇宙的应用非常广泛，以下是其中的一些应用场景：</p>
           <ul id="uses-list-container">
             <li>
-              虚拟社交：在元宇宙中，人们可以创建自己的虚拟身份，并与其他人进行社交交流。
+                Co-Programmer for ARK ALL since May, 2022.
             </li>
-            <li>
-              虚拟经济：元宇宙将为人们提供一个虚拟经济体系，包括虚拟货币、虚拟商品和虚拟服务等。
-            </li>
-            <li>
-              虚拟旅游：人们可以在元宇宙中体验不同国家和地区的文化、风景和历史。
-            </li>
-            <li>虚拟艺术：元宇宙将为艺术家提供一个创造的平台和展示的空间。</li>
           </ul>
         </section>
   
-        <section id="">
+        <section id="expectations">
           <img
             class="icon"
             style="width: 50px; height: 50px; padding-bottom: 0"
             src="Assets/Icons/future.png"
           />
-          <h2 style="margin-top: 5px">Experience</h2>
+          <h2 style="margin-top: 5px">Expectations</h2>
           <p style="text-indent: 4ch; opacity: 0.5">
             随着技术的不断发展，元宇宙将不断壮大和发展，成为一个包含无限可能的虚拟世界。人们将可以在元宇宙中实现更多的梦想和愿望。
           </p>
@@ -194,17 +211,12 @@
           <!-- Button to change language-->
         </section>
       </main>
-      <footer>Copyright © Huang Yanzhen All rights reserved.</footer>
-      <style>
-        footer {
-          font-size: 14px;
-          color: white;
-          padding: 20px;
-          opacity: 0.5;
-          height: 100px;
-          background: rgb(14, 3, 32);
-        }
-      </style>
+
+      <footer>
+        <p class="footer-note">Copyright © Huang Yanzhen All rights reserved.</p>
+      </footer>
+      
+
   </body>
 
 </html>
